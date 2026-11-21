@@ -1,0 +1,1397 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91cao官网_品牌影像社区|高清正版内容生态</title>
+<meta name="description" content="91cao官网是面向内容创作者的品牌影像社区，深耕原创高清视频内容，汇聚多元创作力量，打造值得信赖的内容生态与陪伴式社区体验。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1f2d'/%3E%3Cpolygon points='24,18 24,46 48,32' fill='%2342e5ff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#0b1620;
+  --navy-2:#12232f;
+  --ink:#16232e;
+  --neon:#42e5ff;
+  --neon-2:#7cf2c3;
+  --amber:#ffb74d;
+  --paper:#f4f7f9;
+  --muted:#7d8f9c;
+  --line:rgba(66,229,255,.18);
+  --shadow:0 18px 40px -22px rgba(6,24,36,.55);
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.bx-sticky{position:sticky;top:0;z-index:60}
+.bx-announce{
+  background:linear-gradient(90deg,#0b1620,#12303d 55%,#0b1620);
+  color:#cfe9f2;
+  font-size:13px;
+  letter-spacing:.02em;
+  border-bottom:1px solid rgba(66,229,255,.16);
+}
+.bx-announce .wrap{display:flex;align-items:center;gap:14px;padding:8px 0;overflow:hidden}
+.bx-announce-tag{
+  flex:0 0 auto;background:var(--neon);color:#06222c;font-weight:700;
+  font-size:11px;padding:2px 9px;border-radius:999px;letter-spacing:.08em;
+}
+.bx-announce-list{display:flex;gap:36px;white-space:nowrap;animation:bxMarquee 26s linear infinite}
+.bx-announce-list span{opacity:.9}
+.bx-announce-list b{color:var(--neon-2);font-weight:600}
+@keyframes bxMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.bx-header{background:rgba(11,22,32,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bx-header .wrap{display:flex;align-items:center;gap:20px;height:72px}
+.bx-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.bx-logo-mark{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#42e5ff,#1c7fa8);box-shadow:0 0 0 1px rgba(66,229,255,.4),0 8px 22px -10px rgba(66,229,255,.8);
+}
+.bx-logo-mark svg{width:20px;height:20px}
+.bx-logo-text{color:#fff;font-weight:800;font-size:19px;letter-spacing:.03em;line-height:1.1}
+.bx-logo-text small{display:block;font-size:10px;font-weight:500;color:#7f97a5;letter-spacing:.28em}
+.bx-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.bx-nav a{
+  color:#bfd3de;font-size:14px;padding:8px 12px;border-radius:9px;transition:.22s;
+}
+.bx-nav a:hover{color:#fff;background:rgba(66,229,255,.12)}
+.bx-search{margin-left:auto;display:flex;align-items:center;gap:8px;position:relative}
+.bx-search input{
+  width:190px;background:rgba(255,255,255,.06);border:1px solid rgba(66,229,255,.22);
+  color:#e6f4fa;border-radius:999px;padding:8px 14px;font-size:13px;outline:none;transition:.25s;
+}
+.bx-search input::placeholder{color:#68808d}
+.bx-search input:focus{width:230px;border-color:var(--neon);background:rgba(66,229,255,.09)}
+.bx-search-hint{
+  position:absolute;top:46px;right:0;width:270px;background:#0f2230;border:1px solid var(--line);
+  border-radius:12px;padding:10px 14px;font-size:12.5px;color:#a9c2ce;box-shadow:var(--shadow);
+  opacity:0;visibility:hidden;transform:translateY(-6px);transition:.22s;
+}
+.bx-search-hint.show{opacity:1;visibility:visible;transform:translateY(0)}
+.bx-burger{display:none;margin-left:auto;width:42px;height:42px;border-radius:10px;background:rgba(66,229,255,.12);place-items:center}
+.bx-burger span{display:block;width:18px;height:2px;background:#cfe9f2;position:relative}
+.bx-burger span::before,.bx-burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:#cfe9f2}
+.bx-burger span::before{top:-6px}.bx-burger span::after{top:6px}
+
+/* ---------- 首屏 ---------- */
+.bx-hero{
+  position:relative;background:
+    radial-gradient(900px 420px at 82% -8%,rgba(66,229,255,.22),transparent 62%),
+    radial-gradient(700px 380px at 6% 108%,rgba(124,242,195,.14),transparent 60%),
+    linear-gradient(160deg,#0b1620,#102736 62%,#0b1620);
+  color:#e9f6fb;overflow:hidden;
+}
+.bx-hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(66,229,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(66,229,255,.055) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:radial-gradient(60% 70% at 50% 30%,#000,transparent 82%);
+}
+.bx-hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;padding:64px 0 72px}
+.bx-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.06em;
+  color:var(--neon);border:1px solid rgba(66,229,255,.4);border-radius:999px;padding:5px 14px;
+  background:rgba(66,229,255,.08);margin-bottom:20px;
+}
+.bx-hero-badge i{width:6px;height:6px;border-radius:50%;background:var(--neon-2);box-shadow:0 0 10px var(--neon-2)}
+h1.bx-h1{
+  font-size:clamp(42px,6.4vw,74px);line-height:1.02;font-weight:900;letter-spacing:-.02em;
+  background:linear-gradient(96deg,#ffffff 18%,#8ff0ff 58%,#7cf2c3);
+  -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:16px;
+}
+.bx-hero-sub{font-size:clamp(16px,2vw,20px);color:#c4dde8;font-weight:600;letter-spacing:.02em;margin-bottom:16px}
+.bx-hero-intro{color:#9fb8c5;font-size:14.6px;max-width:540px;margin-bottom:26px}
+.bx-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.bx-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 24px;
+  font-size:14.5px;font-weight:700;letter-spacing:.02em;transition:.25s;
+}
+.bx-btn-primary{background:linear-gradient(120deg,#42e5ff,#7cf2c3);color:#062430;box-shadow:0 14px 32px -16px rgba(66,229,255,.95)}
+.bx-btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 38px -16px rgba(66,229,255,1)}
+.bx-btn-ghost{border:1px solid rgba(66,229,255,.42);color:#c9ecf6}
+.bx-btn-ghost:hover{background:rgba(66,229,255,.12);color:#fff}
+.bx-hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:520px}
+.bx-stat{background:rgba(255,255,255,.045);border:1px solid rgba(66,229,255,.16);border-radius:14px;padding:14px 16px}
+.bx-stat b{display:block;font-size:26px;color:#fff;font-weight:800;letter-spacing:-.01em;line-height:1.2}
+.bx-stat b em{font-style:normal;font-size:14px;color:var(--neon);margin-left:2px}
+.bx-stat span{font-size:12.5px;color:#8ba7b5}
+
+.bx-hero-visual{position:relative}
+.bx-hero-frame{
+  position:relative;border-radius:22px;overflow:hidden;border:1px solid rgba(66,229,255,.3);
+  box-shadow:0 40px 80px -40px rgba(0,0,0,.9),0 0 0 6px rgba(66,229,255,.06);
+}
+.bx-hero-frame img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.bx-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:66px;height:66px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(11,22,32,.55);backdrop-filter:blur(6px);border:1px solid rgba(66,229,255,.7);
+  color:var(--neon);transition:.28s;
+}
+.bx-play svg{width:22px;height:22px}
+.bx-play:hover{background:var(--neon);color:#062430;transform:translate(-50%,-50%) scale(1.06)}
+.bx-hero-tag{
+  position:absolute;left:16px;bottom:16px;font-size:12px;color:#dff6fd;
+  background:rgba(6,20,28,.66);border:1px solid rgba(66,229,255,.3);border-radius:999px;padding:5px 12px;
+  backdrop-filter:blur(4px);
+}
+.bx-hero-chip{
+  position:absolute;right:-14px;bottom:-18px;width:168px;border-radius:16px;overflow:hidden;
+  border:1px solid rgba(66,229,255,.35);box-shadow:0 24px 44px -24px rgba(0,0,0,.95);
+}
+.bx-hero-chip img{aspect-ratio:16/10;object-fit:cover}
+.bx-hero-chip span{display:block;font-size:11.5px;padding:7px 10px;background:#0f2230;color:#a9c9d6}
+
+/* ---------- 通用区块 ---------- */
+.bx-section{padding:70px 0}
+.bx-section.alt{background:#ffffff;border-block:1px solid #e4ebf0}
+.bx-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.bx-head-l{max-width:700px}
+.bx-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;
+  letter-spacing:.2em;color:#1c6f8c;text-transform:uppercase;margin-bottom:10px;
+}
+.bx-eyebrow::before{content:"";width:22px;height:2px;background:linear-gradient(90deg,#42e5ff,#7cf2c3)}
+h2.bx-h2{font-size:clamp(24px,3.2vw,34px);font-weight:800;letter-spacing:-.01em;color:#0e1f2b;line-height:1.28}
+.bx-head p{color:#647b8a;font-size:14.5px;margin-top:10px}
+.bx-head-link{font-size:13.5px;font-weight:700;color:#12657f;border-bottom:2px solid rgba(66,229,255,.6);padding-bottom:2px}
+
+/* ---------- 品牌解析长文 ---------- */
+.bx-about{display:grid;grid-template-columns:1fr 1.55fr;gap:46px;align-items:start}
+.bx-about-aside{position:sticky;top:150px}
+.bx-about-card{
+  background:linear-gradient(165deg,#0d1e2a,#123142);border-radius:20px;color:#d8eef7;
+  padding:26px;box-shadow:var(--shadow);
+}
+.bx-about-card h3{font-size:17px;color:#fff;margin-bottom:12px}
+.bx-about-card ul{display:grid;gap:11px;font-size:13.5px;color:#a7c3d0}
+.bx-about-card li{display:flex;gap:9px;align-items:flex-start}
+.bx-about-card li::before{content:"";flex:0 0 auto;width:7px;height:7px;margin-top:8px;border-radius:50%;background:var(--neon)}
+.bx-about-body h3{font-size:19px;color:#0e1f2b;margin:26px 0 10px;font-weight:800}
+.bx-about-body h3:first-child{margin-top:0}
+.bx-about-body p{font-size:14.8px;color:#41586a;margin-bottom:14px;text-align:justify}
+.bx-about-quote{
+  border-left:3px solid var(--neon);background:#eef8fc;border-radius:0 12px 12px 0;
+  padding:14px 20px;font-size:14.5px;color:#1d4a5e;margin:20px 0;
+}
+
+/* ---------- 焦点视频 ---------- */
+.bx-focus-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:22px}
+.bx-card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid #e4ebf0;
+  transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column;
+}
+.bx-card:hover{transform:translateY(-4px);box-shadow:0 26px 48px -30px rgba(10,40,58,.45);border-color:#bfe4f0}
+.bx-thumb{position:relative;overflow:hidden;background:#0c1c27}
+.bx-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .5s}
+.bx-card:hover .bx-thumb img{transform:scale(1.045)}
+.bx-thumb-tag{
+  position:absolute;left:12px;top:12px;font-size:11.5px;font-weight:700;letter-spacing:.04em;
+  background:rgba(66,229,255,.92);color:#06222c;padding:3px 10px;border-radius:999px;
+}
+.bx-thumb-dur{
+  position:absolute;right:12px;bottom:12px;font-size:11.5px;color:#e6f6fb;
+  background:rgba(8,22,30,.78);border-radius:6px;padding:2px 8px;
+}
+.bx-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.bx-card-body h3{font-size:16.5px;font-weight:800;color:#0e202c;line-height:1.42}
+.bx-card-body p{font-size:13.4px;color:#647b8a;flex:1}
+.bx-card-meta{display:flex;align-items:center;gap:10px;font-size:12.4px;color:#8298a5;margin-top:2px}
+.bx-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-size:11.5px;font-weight:800;color:#fff;flex:0 0 auto;
+}
+.bx-card-actions{display:flex;gap:8px;margin-top:12px;padding-top:12px;border-top:1px dashed #e3ecf1}
+.bx-act{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:#5d7c8c;
+  border:1px solid #e1ebf0;border-radius:999px;padding:5px 12px;transition:.2s;
+}
+.bx-act:hover{border-color:#9fdcee;color:#11708f;background:#f2fbfe}
+.bx-act svg{width:14px;height:14px}
+.bx-act.on{color:#e0555d;border-color:#f6c9cc;background:#fdf3f4}
+.bx-focus-side{display:grid;gap:18px;align-content:start}
+.bx-mini{display:grid;grid-template-columns:132px 1fr;gap:14px;align-items:center;background:#fff;border:1px solid #e4ebf0;border-radius:14px;padding:10px;transition:.26s}
+.bx-mini:hover{border-color:#bfe4f0;transform:translateX(3px);box-shadow:0 18px 34px -28px rgba(10,40,58,.5)}
+.bx-mini img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:9px}
+.bx-mini h4{font-size:13.8px;font-weight:700;color:#12242f;line-height:1.4;margin-bottom:5px}
+.bx-mini span{font-size:12px;color:#8298a5}
+
+/* ---------- 视频流 ---------- */
+.bx-stream{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bx-filter{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px}
+.bx-chip{
+  font-size:13px;padding:7px 16px;border-radius:999px;border:1px solid #d9e6ed;
+  color:#4a6272;background:#fff;transition:.22s;
+}
+.bx-chip:hover{border-color:#9fdcee;color:#12667f}
+.bx-chip.active{background:linear-gradient(120deg,#0f2f3f,#154a60);color:#e7f8fd;border-color:transparent;font-weight:700}
+
+/* ---------- 专题 ---------- */
+.bx-topics{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.bx-topic{
+  position:relative;border-radius:16px;overflow:hidden;color:#fff;
+  border:1px solid #dbe7ee;transition:.3s;min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;
+}
+.bx-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.bx-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,20,28,.05) 20%,rgba(6,20,28,.88))}
+.bx-topic:hover img{transform:scale(1.06)}
+.bx-topic-in{position:relative;z-index:2;padding:18px}
+.bx-topic-in em{font-style:normal;font-size:11px;letter-spacing:.1em;background:rgba(66,229,255,.9);color:#06222c;border-radius:999px;padding:2px 9px;font-weight:700}
+.bx-topic-in h3{font-size:16px;margin:9px 0 5px;font-weight:800}
+.bx-topic-in p{font-size:12.4px;color:#c6dde7;line-height:1.6}
+
+/* ---------- 创作者 ---------- */
+.bx-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.bx-creator{
+  background:#fff;border:1px solid #e4ebf0;border-radius:16px;padding:22px 18px;text-align:center;
+  transition:.28s;
+}
+.bx-creator:hover{transform:translateY(-5px);box-shadow:0 26px 44px -32px rgba(10,40,58,.5);border-color:#bfe4f0}
+.bx-creator-av{
+  width:64px;height:64px;border-radius:20px;margin:0 auto 12px;display:grid;place-items:center;
+  font-size:24px;font-weight:900;color:#fff;letter-spacing:.02em;
+}
+.bx-creator h3{font-size:15.5px;font-weight:800;color:#0e202c}
+.bx-creator .role{font-size:12px;color:#11708f;font-weight:700;margin:4px 0 8px}
+.bx-creator p{font-size:12.8px;color:#78909c;line-height:1.7;margin-bottom:12px;min-height:48px}
+.bx-creator-stats{display:flex;justify-content:center;gap:16px;font-size:11.8px;color:#8298a5;border-top:1px dashed #e3ecf1;padding-top:11px}
+.bx-creator-stats b{display:block;color:#152b38;font-size:14px}
+.bx-creator-btn{
+  margin-top:13px;width:100%;font-size:12.8px;font-weight:700;padding:8px;border-radius:9px;
+  background:#eff9fc;color:#12667f;border:1px solid #cceaeF;transition:.2s;
+}
+.bx-creator-btn:hover{background:#0f2f3f;color:#e7f8fd;border-color:transparent}
+
+/* ---------- 作品墙 ---------- */
+.bx-wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:96px;gap:14px}
+.bx-wall figure{position:relative;overflow:hidden;border-radius:13px;border:1px solid #e0eaf0;background:#0c1c27}
+.bx-wall img{width:100%;height:100%;object-fit:cover;transition:transform .55s}
+.bx-wall figure:hover img{transform:scale(1.07)}
+.bx-wall figcaption{
+  position:absolute;inset:auto 0 0 0;padding:22px 12px 10px;font-size:12px;color:#eaf7fc;
+  background:linear-gradient(180deg,transparent,rgba(6,20,28,.9));opacity:0;transition:.3s;
+}
+.bx-wall figure:hover figcaption{opacity:1}
+.bx-w-a{grid-column:span 3;grid-row:span 2}
+.bx-w-b{grid-column:span 3;grid-row:span 1}
+.bx-w-c{grid-column:span 2;grid-row:span 1}
+.bx-w-d{grid-column:span 2;grid-row:span 2}
+.bx-w-e{grid-column:span 2;grid-row:span 1}
+
+/* ---------- 评价 ---------- */
+.bx-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bx-review{background:#fff;border:1px solid #e4ebf0;border-radius:14px;padding:20px;position:relative}
+.bx-review::before{
+  content:"\201C";position:absolute;right:18px;top:6px;font-size:52px;color:#dcf1f8;font-family:Georgia,serif;line-height:1;
+}
+.bx-review p{font-size:13.6px;color:#3f5768;margin-bottom:14px;position:relative;z-index:1}
+.bx-review-who{display:flex;align-items:center;gap:10px}
+.bx-review-who .bx-avatar{width:32px;height:32px;border-radius:11px;font-size:13px}
+.bx-review-who b{font-size:13px;color:#12242f;display:block}
+.bx-review-who span{font-size:11.5px;color:#8ba0ac}
+.bx-stars{color:#ffb74d;font-size:12.5px;letter-spacing:1px;margin-bottom:8px}
+
+/* ---------- 动态 + FAQ ---------- */
+.bx-split{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:start}
+.bx-timeline{position:relative;padding-left:24px}
+.bx-timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:linear-gradient(#42e5ff,#d7eaf2)}
+.bx-tl-item{position:relative;padding-bottom:24px}
+.bx-tl-item::before{
+  content:"";position:absolute;left:-24px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:#fff;border:2.5px solid #42c6e0;
+}
+.bx-tl-item time{font-size:12px;color:#11708f;font-weight:700;letter-spacing:.04em}
+.bx-tl-item h4{font-size:14.8px;font-weight:800;color:#12242f;margin:4px 0 4px}
+.bx-tl-item p{font-size:13.2px;color:#647b8a}
+
+.bx-faq details{background:#fff;border:1px solid #e4ebf0;border-radius:12px;margin-bottom:11px;overflow:hidden}
+.bx-faq summary{
+  list-style:none;cursor:pointer;padding:15px 18px;font-size:14.2px;font-weight:700;color:#12242f;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.bx-faq summary::-webkit-details-marker{display:none}
+.bx-faq summary::after{content:"+";font-size:19px;color:#1a89a8;font-weight:400;transition:.25s}
+.bx-faq details[open] summary::after{transform:rotate(45deg)}
+.bx-faq details[open] summary{background:#f4fbfd}
+.bx-faq p{padding:0 18px 16px;font-size:13.4px;color:#5c7280}
+
+/* ---------- 联系 / 投稿 ---------- */
+.bx-contact{
+  background:linear-gradient(140deg,#0b1b26,#123244 60%,#0b1b26);color:#d9eef7;
+  border-radius:22px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;
+  box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.bx-contact::after{
+  content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(66,229,255,.28),transparent 68%);
+}
+.bx-contact h2{font-size:clamp(22px,3vw,30px);color:#fff;margin-bottom:12px;font-weight:800}
+.bx-contact p{font-size:14px;color:#a7c3d0;margin-bottom:20px;max-width:520px}
+.bx-contact-actions{display:flex;flex-wrap:wrap;gap:12px}
+.bx-contact-panel{background:rgba(255,255,255,.06);border:1px solid rgba(66,229,255,.2);border-radius:16px;padding:22px}
+.bx-contact-panel li{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:8px 0;border-bottom:1px dashed rgba(66,229,255,.16);color:#b9d5e1}
+.bx-contact-panel li:last-child{border-bottom:none}
+.bx-contact-panel b{color:#fff;font-weight:700}
+
+/* ---------- 页脚 ---------- */
+.bx-footer{background:#0a1520;color:#8ca7b4;padding:52px 0 26px;margin-top:20px}
+.bx-footer-top{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:36px;padding-bottom:34px;border-bottom:1px solid rgba(66,229,255,.13)}
+.bx-footer h4{color:#e6f4fa;font-size:14px;margin-bottom:14px;font-weight:800}
+.bx-footer p{font-size:13px;line-height:1.9}
+.bx-footer li{font-size:13px;padding:5px 0}
+.bx-footer li a:hover{color:var(--neon)}
+.bx-footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;font-size:12.2px;color:#6d8794}
+.bx-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.bx-footer-brand .bx-logo-mark{width:34px;height:34px;border-radius:10px}
+.bx-footer-brand b{color:#fff;font-size:16px;letter-spacing:.03em}
+
+/* ---------- Toast / 弹窗 / 回顶 ---------- */
+.bx-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:200;
+  background:#0f2230;color:#dff4fb;font-size:13.5px;padding:11px 22px;border-radius:999px;
+  border:1px solid rgba(66,229,255,.4);box-shadow:0 18px 40px -18px rgba(0,0,0,.8);
+  opacity:0;visibility:hidden;transition:.28s;
+}
+.bx-toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.bx-modal{
+  position:fixed;inset:0;z-index:180;display:grid;place-items:center;padding:20px;
+  background:rgba(6,18,26,.66);backdrop-filter:blur(4px);
+  opacity:0;visibility:hidden;transition:.25s;
+}
+.bx-modal.show{opacity:1;visibility:visible}
+.bx-modal-box{
+  width:min(460px,100%);background:#fff;border-radius:18px;padding:26px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);
+  transform:translateY(14px) scale(.98);transition:.28s;
+}
+.bx-modal.show .bx-modal-box{transform:none}
+.bx-modal-box h3{font-size:18px;font-weight:800;color:#0e202c;margin-bottom:6px}
+.bx-modal-box .sub{font-size:13px;color:#7d94a1;margin-bottom:16px}
+.bx-modal-box textarea,.bx-modal-box input{
+  width:100%;border:1px solid #dbe7ee;border-radius:10px;padding:10px 13px;font-size:13.5px;
+  font-family:inherit;outline:none;margin-bottom:12px;color:#1b2f3b;transition:.2s;
+}
+.bx-modal-box textarea:focus,.bx-modal-box input:focus{border-color:#7cd3e8;box-shadow:0 0 0 3px rgba(66,229,255,.16)}
+.bx-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.bx-modal-actions .bx-btn{padding:9px 20px;font-size:13.5px}
+.bx-modal-actions .bx-btn-ghost{color:#417084;border-color:#cfe1e9}
+.bx-to-top{
+  position:fixed;right:24px;bottom:24px;z-index:120;width:46px;height:46px;border-radius:14px;
+  background:linear-gradient(140deg,#0f2f3f,#155a72);color:#e7f8fd;display:grid;place-items:center;
+  box-shadow:0 18px 34px -18px rgba(0,0,0,.7);opacity:0;visibility:hidden;transform:translateY(12px);transition:.26s;
+}
+.bx-to-top.show{opacity:1;visibility:visible;transform:none}
+.bx-to-top svg{width:18px;height:18px}
+
+@media (max-width:1080px){
+  .bx-hero .wrap{grid-template-columns:1fr;gap:36px;padding:48px 0 56px}
+  .bx-hero-chip{display:none}
+  .bx-about{grid-template-columns:1fr;gap:28px}
+  .bx-about-aside{position:static}
+  .bx-stream,.bx-reviews{grid-template-columns:repeat(2,1fr)}
+  .bx-creators{grid-template-columns:repeat(2,1fr)}
+  .bx-topics{grid-template-columns:repeat(2,1fr)}
+  .bx-focus-grid{grid-template-columns:1fr}
+  .bx-wall{grid-template-columns:repeat(4,1fr)}
+  .bx-w-a{grid-column:span 2;grid-row:span 2}
+  .bx-w-b{grid-column:span 2}
+  .bx-w-c{grid-column:span 2}
+  .bx-w-d{grid-column:span 2;grid-row:span 1}
+  .bx-w-e{grid-column:span 2}
+  .bx-split{grid-template-columns:1fr;gap:32px}
+  .bx-contact{grid-template-columns:1fr;padding:32px}
+  .bx-footer-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .bx-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#0d1e2a;
+    flex-direction:column;padding:12px 6vw 18px;gap:2px;border-bottom:1px solid var(--line);
+  }
+  .bx-nav.open{display:flex}
+  .bx-nav a{padding:11px 12px}
+  .bx-header .wrap{position:relative}
+  .bx-burger{display:grid}
+  .bx-search{margin-left:0;order:3}
+  .bx-search input{width:150px}
+  .bx-search input:focus{width:170px}
+  .bx-search-hint{right:auto;left:0;width:240px}
+}
+@media (max-width:640px){
+  html{scroll-padding-top:124px}
+  .bx-section{padding:50px 0}
+  .bx-hero-stats{grid-template-columns:1fr 1fr}
+  .bx-stream,.bx-reviews,.bx-creators,.bx-topics{grid-template-columns:1fr}
+  .bx-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px}
+  .bx-w-a,.bx-w-b,.bx-w-c,.bx-w-d,.bx-w-e{grid-column:span 2;grid-row:span 1}
+  .bx-footer-top{grid-template-columns:1fr}
+  .bx-mini{grid-template-columns:112px 1fr}
+  .bx-contact{padding:24px}
+  .bx-to-top{right:16px;bottom:16px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="bx-sticky">
+  <div class="bx-announce">
+    <div class="wrap">
+      <span class="bx-announce-tag">官方发布</span>
+      <div class="bx-announce-list">
+        <span><b>11月18日</b>「城市夜行」专题新增 6 支原创影像</span>
+        <span><b>11月15日</b> 冬季创作者扶持计划开启报名</span>
+        <span><b>11月10日</b> 移动端剪辑工作台上线，支持一键上传</span>
+        <span><b>11月18日</b>「城市夜行」专题新增 6 支原创影像</span>
+        <span><b>11月15日</b> 冬季创作者扶持计划开启报名</span>
+        <span><b>11月10日</b> 移动端剪辑工作台上线，支持一键上传</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="bx-header">
+    <div class="wrap">
+      <a class="bx-logo" href="#bxTop" aria-label="91cao官网首页">
+        <span class="bx-logo-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 7,20 20,12" fill="#062430"/></svg>
+        </span>
+        <span class="bx-logo-text">91cao<small>OFFICIAL SITE</small></span>
+      </a>
+      <nav class="bx-nav" id="bxNav">
+        <a href="#bxTop">首页</a>
+        <a href="#bxFocus">焦点影像</a>
+        <a href="#bxStream">热门</a>
+        <a href="#bxTopics">专题企划</a>
+        <a href="#bxCreators">创作者</a>
+        <a href="#bxMotion">企业动态</a>
+        <a href="#bxContact">联系投稿</a>
+      </nav>
+      <div class="bx-search">
+        <input id="bxSearchInput" type="search" placeholder="搜索影像、作者、专题" aria-label="站内搜索">
+        <div class="bx-search-hint" id="bxSearchHint"></div>
+      </div>
+      <button class="bx-burger" id="bxBurger" aria-label="展开导航" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+</div>
+
+<main id="bxTop">
+
+  <!-- 首屏 -->
+  <section class="bx-hero">
+    <div class="wrap">
+      <div class="bx-hero-copy">
+        <span class="bx-hero-badge"><i></i>91cao 品牌官网 · 官方运营</span>
+        <h1 class="bx-h1">91cao</h1>
+        <p class="bx-hero-sub">把真实的表达，拍成可以反复回看的影像</p>
+        <p class="bx-hero-intro">
+          作为持续运营的影像内容品牌，91cao 以官方网站为阵地，聚合原创短片、创作者故事与行业观察。我们相信专业的内容生态来自长期的陪伴式创作，也来自对品质与口碑的耐心打磨。
+        </p>
+        <div class="bx-hero-actions">
+          <a class="bx-btn bx-btn-primary" href="#bxFocus">
+            <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 7,20 20,12" fill="currentColor"/></svg>
+            浏览焦点影像
+          </a>
+          <a class="bx-btn bx-btn-ghost" href="#bxContact">投稿与合作</a>
+          <button class="bx-btn bx-btn-ghost" data-bx-modal="share">分享官网</button>
+        </div>
+        <div class="bx-hero-stats">
+          <div class="bx-stat"><b>4,860<em>+</em></b><span>原创影像作品</span></div>
+          <div class="bx-stat"><b>320<em>位</em></b><span>签约与入驻创作者</span></div>
+          <div class="bx-stat"><b>1,200<em>万</em></b><span>月度内容触达</span></div>
+        </div>
+      </div>
+      <div class="bx-hero-visual">
+        <div class="bx-hero-frame">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1c28'/%3E%3Cstop offset='.55' stop-color='%23123c50'/%3E%3Cstop offset='1' stop-color='%230a2634'/%3E%3C/linearGradient%3E%3CradialGradient id='r' cx='.72' cy='.28' r='.6'%3E%3Cstop offset='0' stop-color='%2342e5ff' stop-opacity='.5'/%3E%3Cstop offset='1' stop-color='%2342e5ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g)'/%3E%3Crect width='800' height='500' fill='url(%23r)'/%3E%3Cg stroke='%2342e5ff' stroke-opacity='.22'%3E%3Cpath d='M0 380 L800 300'/%3E%3Cpath d='M0 430 L800 350'/%3E%3Cpath d='M0 330 L800 250'/%3E%3C/g%3E%3Ccircle cx='590' cy='176' r='86' fill='none' stroke='%237cf2c3' stroke-opacity='.55' stroke-width='2'/%3E%3Ccircle cx='590' cy='176' r='56' fill='%2342e5ff' fill-opacity='.14'/%3E%3Cg fill='%23e6f9ff' fill-opacity='.85'%3E%3Crect x='72' y='330' width='120' height='9' rx='4'/%3E%3Crect x='72' y='356' width='210' height='6' rx='3' fill-opacity='.5'/%3E%3Crect x='72' y='374' width='160' height='6' rx='3' fill-opacity='.35'/%3E%3C/g%3E%3Cg fill='%2342e5ff'%3E%3Crect x='72' y='250' width='54' height='54' rx='12' fill-opacity='.2'/%3E%3Crect x='140' y='250' width='54' height='54' rx='12' fill-opacity='.12'/%3E%3Crect x='208' y='250' width='54' height='54' rx='12' fill-opacity='.07'/%3E%3C/g%3E%3C/svg%3E" alt="91cao官网首屏主视觉：夜色中的城市影像与几何光轨">
+          <button class="bx-play" aria-label="播放品牌形象片">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="8,5 8,19 19,12" fill="currentColor"/></svg>
+          </button>
+          <span class="bx-hero-tag">品牌形象片 · 03:12</span>
+        </div>
+        <div class="bx-hero-chip">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23142f3f'/%3E%3Cpath d='M0 190 Q100 120 200 172 T400 140 V250 H0Z' fill='%231b4a60'/%3E%3Cpath d='M0 215 Q120 165 220 205 T400 185 V250 H0Z' fill='%237cf2c3' fill-opacity='.3'/%3E%3Ccircle cx='318' cy='62' r='26' fill='%23ffb74d' fill-opacity='.85'/%3E%3C/svg%3E" alt="本周推荐：户外短片《向海而行》封面">
+          <span>本周推荐 · 向海而行</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析 -->
+  <section class="bx-section" id="bxAbout">
+    <div class="wrap">
+      <div class="bx-head">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Brand Insight</span>
+          <h2 class="bx-h2">关于 91cao：一个把长期主义拍进画面的影像品牌</h2>
+          <p>从品牌故事到内容生态，我们尝试用可被检验的方式，解释 91cao 为什么值得被持续关注。</p>
+        </div>
+        <a class="bx-head-link" href="#bxCreators">认识创作者矩阵</a>
+      </div>
+
+      <div class="bx-about">
+        <aside class="bx-about-aside">
+          <div class="bx-about-card">
+            <h3>91cao 内容准则</h3>
+            <ul>
+              <li>原创优先：所有上架影像均标注创作来源与授权状态</li>
+              <li>高清交付：统一 1080P 起，重点专题支持更高规格</li>
+              <li>真实表达：拒绝模板化叙事，鼓励具体的人与具体的事</li>
+              <li>持续运营：以周为单位更新，保持社区活力与内容密度</li>
+              <li>用户至上：反馈在 48 小时内进入处理流程</li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="bx-about-body">
+          <h3>品牌定位：不做流量回声，做内容的长期资产</h3>
+          <p>91cao 官网是一个以原创影像为核心的内容品牌阵地。我们把自己定义为「影像内容的长期资产管理者」，而不是单纯的视频分发入口。品牌自建立起，就将「深耕」写进运营节奏：每周固定更新专题，每月完成一次创作者回访，每季度发布一份内容观察。这些看上去缓慢的动作，构成了 91cao 与用户之间最稳定的信任基础。</p>
+          <p>在行业里，视频内容常常被快速消费，也快速遗忘。91cao 选择另一条路——我们更关心一支片子三年后是否仍然值得被打开。因此，选题会优先考虑具备时间穿透力的题材：一座城市的日常、一种手艺的传承、一段关系的细微变化、一个行业的真实切面。这些内容不追逐瞬时热点，却能在更长的时间维度里持续被检索、被引用、被讨论。</p>
+
+          <h3>内容生态：创作者、专题与社区的三向循环</h3>
+          <p>91cao 的内容生态由三个部分咬合而成。第一是创作者：平台通过签约、扶持计划与共创企划，帮助有表达欲的人把想法变成成片；第二是专题：编辑团队围绕城市、生活方式、行业观察等方向发起主题征集，让分散的作品形成可阅读的脉络；第三是社区：用户在这里评论、收藏、投票、报名参与线下放映，让影像从「被看完」变成「被讨论」。</p>
+          <p>这套循环的价值在于，它让品质不再依赖单个爆款。一个新人创作者可能在专题里被看见，一位资深作者也可能因为社区反馈而调整叙事节奏。我们把这称为「互相校准」——平台提供标准与资源，创作者提供真实与锐度，用户提供反馈与耐心，三者共同把内容生态推向更健康的方向。</p>
+          <div class="bx-about-quote">「我们希望你点开 91cao 时，看到的不是一堆被算法推来的片段，而是一条可以被追溯的创作线索。」—— 91cao 内容团队</div>
+
+          <h3>品质与口碑：把专业落在可感知的细节上</h3>
+          <p>专业不是一句口号，而是一连串可以被感知的细节。91cao 在片头统一标注创作信息，在播放页提供章节标记，在专题页附上创作手记，在作者页展示完整的作品年表。这些设计并不炫技，却让观看体验更有秩序。我们同样重视正版与授权，所有商用素材均在页面注明来源，转载与二次创作需遵循明确规则。</p>
+          <p>口碑来自长期的一致性。过去几年，91cao 收到最多的评价不是「好看」，而是「踏实」——更新稳定、信息准确、不夸大其词。这种评价对我们而言比任何数据都重要，因为它意味着用户愿意把时间交给这个品牌，并在下一次需要影像内容时，仍然想起 91cao 官网。</p>
+
+          <h3>技术与社会责任：让创作门槛再低一点</h3>
+          <p>技术层面，91cao 持续优化上传、转码与检索体验。移动端剪辑工作台上线后，创作者可以在手机端完成粗剪、字幕与封面制作，再一键上传至官网后台。检索侧，我们支持按题材、地域、时长与创作者多维筛选，让好内容不被淹没。</p>
+          <p>社会责任方面，91cao 每年开放一定比例的公益共创名额，面向记录非遗、乡村教育、城市公共空间等议题的创作者提供制作支持。我们相信，一个内容品牌的影响力，最终要落在它愿意为哪些议题留出位置。这也是 91cao 官方持续运营的底层理由：让影像成为理解世界的一种温和而坚定的方式。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点视频 -->
+  <section class="bx-section alt" id="bxFocus">
+    <div class="wrap">
+      <div class="bx-head">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Focus</span>
+          <h2 class="bx-h2">焦点影像：本期编辑重点推荐</h2>
+          <p>由 91cao 内容团队与社区共同筛选，兼顾叙事完成度与画面质感。</p>
+        </div>
+        <a class="bx-head-link" href="#bxStream">查看全部热门</a>
+      </div>
+
+      <div class="bx-focus-grid">
+        <article class="bx-card">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e2b3a'/%3E%3Cstop offset='1' stop-color='%231e5f78'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23a)'/%3E%3Cg fill='%23eaf9ff' fill-opacity='.9'%3E%3Crect x='60' y='300' width='70' height='8' rx='4'/%3E%3Crect x='60' y='322' width='140' height='5' rx='2.5' fill-opacity='.55'/%3E%3C/g%3E%3Cg stroke='%237cf2c3' stroke-opacity='.5' fill='none'%3E%3Ccircle cx='610' cy='150' r='70'/%3E%3Ccircle cx='610' cy='150' r='46'/%3E%3C/g%3E%3Cpath d='M0 380 L180 320 L360 370 L560 300 L800 360 V450 H0Z' fill='%23071a24' fill-opacity='.7'/%3E%3Cg fill='%2342e5ff' fill-opacity='.65'%3E%3Crect x='430' y='90' width='8' height='120' rx='4'/%3E%3Crect x='452' y='120' width='8' height='90' rx='4'/%3E%3Crect x='474' y='70' width='8' height='140' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="焦点影像《凌晨四点的城市：一条街的醒来方式》封面">
+            <span class="bx-thumb-tag">编辑推荐</span>
+            <span class="bx-thumb-dur">11:26</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>凌晨四点的城市：一条街的醒来方式</h3>
+            <p>我们跟着三位凌晨工作者走了四小时，从环卫站到早点铺，记录一条街从安静到喧闹的完整过程。没有旁白，只有环境声与偶尔的对话。</p>
+            <div class="bx-card-meta">
+              <span class="bx-avatar" style="background:linear-gradient(135deg,#42e5ff,#1b6f8e)">林</span>
+              <span>林照野 · 城市探索</span>
+              <span>· 8.6万次播放</span>
+            </div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 1,284</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-modal="comment">评论</button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="bx-focus-side">
+          <a class="bx-mini" href="#bxStream">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%2320333f'/%3E%3Cpath d='M0 170 Q90 110 180 150 T400 120 V225 H0Z' fill='%2342e5ff' fill-opacity='.25'/%3E%3Ccircle cx='96' cy='66' r='30' fill='%23ffb74d' fill-opacity='.8'/%3E%3Cg stroke='%23eaf9ff' stroke-opacity='.5' fill='none'%3E%3Cpath d='M230 60 h100 M230 84 h70'/%3E%3C/g%3E%3C/svg%3E" alt="短片《海边剪辑室：一次关于光的实验》封面">
+            <div><h4>海边剪辑室：一次关于光的实验</h4><span>摄影手记 · 06:48</span></div>
+          </a>
+          <a class="bx-mini" href="#bxStream">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%231b2b23'/%3E%3Cg fill='%237cf2c3' fill-opacity='.4'%3E%3Crect x='40' y='140' width='16' height='60'/%3E%3Crect x='66' y='110' width='16' height='90'/%3E%3Crect x='92' y='160' width='16' height='40'/%3E%3C/g%3E%3Cg fill='%23eaf9ff' fill-opacity='.75'%3E%3Ccircle cx='300' cy='90' r='26'/%3E%3C/g%3E%3Cpath d='M150 225 Q230 140 320 190 T400 170 V225Z' fill='%23305a4a' fill-opacity='.8'/%3E%3C/svg%3E" alt="纪录短片《一间手作坊的第七年》封面">
+            <div><h4>一间手作坊的第七年</h4><span>人物访谈 · 09:12</span></div>
+          </a>
+          <a class="bx-mini" href="#bxStream">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%232a2233'/%3E%3Cg stroke='%23c9a0ff' stroke-opacity='.6' fill='none' stroke-width='2'%3E%3Cpath d='M40 180 L110 90 L180 150 L250 70 L330 130'/%3E%3C/g%3E%3Cg fill='%23ffb74d' fill-opacity='.85'%3E%3Ccircle cx='110' cy='90' r='6'/%3E%3Ccircle cx='250' cy='70' r='6'/%3E%3C/g%3E%3Crect x='40' y='40' width='120' height='6' rx='3' fill='%23eaf9ff' fill-opacity='.5'/%3E%3C/svg%3E" alt="数据短片《一条视频的 72 小时》封面">
+            <div><h4>一条视频的 72 小时</h4><span>创作幕后 · 07:35</span></div>
+          </a>
+          <a class="bx-mini" href="#bxStream">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23341f1f'/%3E%3Cpath d='M0 200 L120 120 L220 180 L400 90 V225 H0Z' fill='%23ff7a5c' fill-opacity='.3'/%3E%3Ccircle cx='320' cy='60' r='34' fill='%23ffd18f' fill-opacity='.8'/%3E%3Cg stroke='%23ffe9df' stroke-opacity='.6' fill='none'%3E%3Cpath d='M40 60 h80 M40 82 h120'/%3E%3C/g%3E%3C/svg%3E" alt="短纪录片《回到小镇的三个年轻人》封面">
+            <div><h4>回到小镇的三个年轻人</h4><span>在地文化 · 12:03</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="bx-section" id="bxStream">
+    <div class="wrap">
+      <div class="bx-head">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Hot Stream</span>
+          <h2 class="bx-h2">热门影像流：这周社区在讨论什么</h2>
+          <p>点击标签快速筛选，所有作品均为 91cao 官方收录的原创内容。</p>
+        </div>
+        <a class="bx-head-link" href="#bxTopics">进入专题企划</a>
+      </div>
+
+      <div class="bx-filter" id="bxFilter">
+        <button class="bx-chip active" data-filter="all">全部</button>
+        <button class="bx-chip" data-filter="city">城市探索</button>
+        <button class="bx-chip" data-filter="life">生活方式</button>
+        <button class="bx-chip" data-filter="craft">创作幕后</button>
+        <button class="bx-chip" data-filter="talk">人物访谈</button>
+      </div>
+
+      <div class="bx-stream" id="bxStreamGrid">
+        <article class="bx-card" data-cat="city">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%230f2733'/%3E%3Cg fill='%23113a4d'%3E%3Crect x='20' y='110' width='46' height='115'/%3E%3Crect x='80' y='80' width='54' height='145'/%3E%3Crect x='148' y='128' width='40' height='97'/%3E%3Crect x='206' y='60' width='58' height='165'/%3E%3Crect x='282' y='100' width='44' height='125'/%3E%3Crect x='340' y='70' width='46' height='155'/%3E%3C/g%3E%3Cg fill='%2342e5ff' fill-opacity='.8'%3E%3Crect x='30' y='126' width='8' height='8'/%3E%3Crect x='94' y='98' width='8' height='8'/%3E%3Crect x='220' y='80' width='8' height='8'/%3E%3Crect x='296' y='118' width='8' height='8'/%3E%3Crect x='352' y='90' width='8' height='8'/%3E%3C/g%3E%3Ccircle cx='190' cy='40' r='18' fill='%237cf2c3' fill-opacity='.5'/%3E%3C/svg%3E" alt="视频《沿着地铁末班车，拍下一座城的倦意》封面">
+            <span class="bx-thumb-tag">城市探索</span>
+            <span class="bx-thumb-dur">08:14</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>沿着地铁末班车，拍下一座城的倦意</h3>
+            <p>从终点站坐到起点站，记录末班车上不同人的睡姿与清醒。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#42e5ff,#1b6f8e)">林</span><span>林照野</span><span>· 3.2万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 862</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="life">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%232a2118'/%3E%3Cg fill='%234d3a26'%3E%3Crect x='0' y='150' width='400' height='75'/%3E%3C/g%3E%3Cg fill='%23ffb74d' fill-opacity='.55'%3E%3Ccircle cx='90' cy='90' r='30'/%3E%3C/g%3E%3Cg stroke='%23ffe0a3' stroke-opacity='.75' fill='none' stroke-width='3'%3E%3Cpath d='M160 150 v-46 a34 34 0 0 1 68 0 v46'/%3E%3C/g%3E%3Crect x='252' y='112' width='80' height='38' rx='6' fill='%23eaf9ff' fill-opacity='.2'/%3E%3Cg fill='%23eaf9ff' fill-opacity='.6'%3E%3Crect x='24' y='40' width='90' height='6' rx='3'/%3E%3Crect x='24' y='58' width='60' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="视频《一杯手冲的十二分钟：清晨厨房记录》封面">
+            <span class="bx-thumb-tag">生活方式</span>
+            <span class="bx-thumb-dur">12:40</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>一杯手冲的十二分钟：清晨厨房记录</h3>
+            <p>不加速、不配乐，只保留水声与磨豆声的一次安静记录。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#ffb74d,#b4641f)">程</span><span>程小满</span><span>· 2.7万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 1,046</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="craft">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23131a2b'/%3E%3Cg stroke='%237cd3e8' stroke-opacity='.6' fill='none'%3E%3Crect x='40' y='40' width='150' height='90' rx='8'/%3E%3Cpath d='M40 130 h150'/%3E%3C/g%3E%3Cg fill='%2342e5ff' fill-opacity='.7'%3E%3Crect x='56' y='56' width='40' height='6' rx='3'/%3E%3Crect x='56' y='74' width='90' height='4' rx='2'/%3E%3Crect x='56' y='88' width='70' height='4' rx='2'/%3E%3C/g%3E%3Cg fill='%23ffb74d' fill-opacity='.85'%3E%3Crect x='220' y='60' width='140' height='10' rx='5'/%3E%3Crect x='220' y='84' width='100' height='8' rx='4' fill-opacity='.6'/%3E%3Crect x='220' y='106' width='120' height='8' rx='4' fill-opacity='.4'/%3E%3C/g%3E%3Cg stroke='%237cf2c3' stroke-opacity='.5' fill='none'%3E%3Cpath d='M220 160 L300 130 L360 160'/%3E%3C/g%3E%3C/svg%3E" alt="视频《从脚本到成片：一支短片的 48 小时》封面">
+            <span class="bx-thumb-tag">创作幕后</span>
+            <span class="bx-thumb-dur">15:22</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>从脚本到成片：一支短片的 48 小时</h3>
+            <p>完整呈现选题会、分镜、拍摄与剪辑，包括三次被推翻的方案。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#7c5cff,#3a2a8e)">周</span><span>周叙白</span><span>· 4.1万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 1,530</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="talk">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%2324282c'/%3E%3Ccircle cx='120' cy='112' r='52' fill='%234a5b66'/%3E%3Ccircle cx='120' cy='94' r='22' fill='%238ba6b3'/%3E%3Cpath d='M84 152 q36 -26 72 0' fill='%238ba6b3'/%3E%3Cg fill='%23eaf9ff' fill-opacity='.7'%3E%3Crect x='210' y='80' width='130' height='7' rx='3.5'/%3E%3Crect x='210' y='104' width='100' height='7' rx='3.5' fill-opacity='.5'/%3E%3Crect x='210' y='128' width='118' height='7' rx='3.5' fill-opacity='.35'/%3E%3C/g%3E%3Cg stroke='%2342e5ff' stroke-opacity='.6' fill='none'%3E%3Ccircle cx='120' cy='112' r='64'/%3E%3C/g%3E%3C/svg%3E" alt="视频《对话：拍了十年，我为什么还在拍普通人》封面">
+            <span class="bx-thumb-tag">人物访谈</span>
+            <span class="bx-thumb-dur">22:08</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>对话：拍了十年，我为什么还在拍普通人</h3>
+            <p>关于耐心、被拒绝、以及为什么镜头应该更靠近生活本身。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#2bb6a3,#136b60)">许</span><span>许南舟</span><span>· 1.9万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 720</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="city">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23172b2a'/%3E%3Cpath d='M0 180 Q80 120 160 165 T400 140 V225 H0Z' fill='%23305a4a' fill-opacity='.8'/%3E%3Cg stroke='%237cf2c3' stroke-opacity='.65' fill='none' stroke-width='2'%3E%3Cpath d='M60 60 L110 60 L110 100 L160 100'/%3E%3Cpath d='M220 40 L220 90 L290 90'/%3E%3C/g%3E%3Cg fill='%23eaf9ff' fill-opacity='.7'%3E%3Ccircle cx='330' cy='60' r='20'/%3E%3C/g%3E%3Cg fill='%23ffb74d' fill-opacity='.7'%3E%3Crect x='40' y='150' width='40' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="视频《老城区的一百种走路方式》封面">
+            <span class="bx-thumb-tag">城市探索</span>
+            <span class="bx-thumb-dur">09:48</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>老城区的一百种走路方式</h3>
+            <p>跟随八位居民的脚步，重新认识他们住了几十年的街区。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#4aa3e0,#1b5c85)">顾</span><span>顾晚青</span><span>· 2.1万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 604</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="life">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23251e2e'/%3E%3Cg fill='%23c9a0ff' fill-opacity='.35'%3E%3Ccircle cx='80' cy='70' r='42'/%3E%3Ccircle cx='340' cy='150' r='56'/%3E%3C/g%3E%3Cg stroke='%23eaf9ff' stroke-opacity='.6' fill='none' stroke-width='2'%3E%3Cpath d='M140 130 v-40 a45 45 0 0 1 90 0 v40'/%3E%3C/g%3E%3Cg fill='%23ffb74d' fill-opacity='.75'%3E%3Crect x='170' y='150' width='30' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%23eaf9ff' fill-opacity='.55'%3E%3Crect x='40' y='180' width='90' height='5' rx='2.5'/%3E%3Crect x='40' y='196' width='60' height='5' rx='2.5'/%3E%3C/g%3E%3C/svg%3E" alt="视频《把阳台改成小放映室之后》封面">
+            <span class="bx-thumb-tag">生活方式</span>
+            <span class="bx-thumb-dur">06:30</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>把阳台改成小放映室之后</h3>
+            <p>一个普通住户的改造记录，和它带来的二十次邻里观影。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#c9a0ff,#6a4a9e)">夏</span><span>夏知遥</span><span>· 1.4万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 488</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="craft">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%231c2430'/%3E%3Cg stroke='%2342e5ff' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Crect x='40' y='50' width='90' height='60' rx='6'/%3E%3Crect x='150' y='50' width='90' height='60' rx='6'/%3E%3Crect x='260' y='50' width='90' height='60' rx='6'/%3E%3C/g%3E%3Cg fill='%237cf2c3' fill-opacity='.7'%3E%3Crect x='40' y='140' width='310' height='6' rx='3'/%3E%3Crect x='40' y='160' width='220' height='6' rx='3' fill-opacity='.5'/%3E%3Crect x='40' y='180' width='270' height='6' rx='3' fill-opacity='.3'/%3E%3C/g%3E%3C/svg%3E" alt="视频《调色到底在调什么：一次色彩复盘》封面">
+            <span class="bx-thumb-tag">教程干货</span>
+            <span class="bx-thumb-dur">18:05</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>调色到底在调什么：一次色彩复盘</h3>
+            <p>用同一段素材演示五种风格，讲清楚对比、饱和与情绪的关系。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#42e5ff,#144d63)">沈</span><span>沈亦然</span><span>· 3.5万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 1,212</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="talk">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%232b2320'/%3E%3Cg fill='%23ffb74d' fill-opacity='.4'%3E%3Crect x='0' y='160' width='400' height='65'/%3E%3C/g%3E%3Cg stroke='%23ffe0a3' stroke-opacity='.7' fill='none' stroke-width='2'%3E%3Cpath d='M60 150 q40 -60 80 0'/%3E%3Cpath d='M180 150 q40 -80 80 0'/%3E%3C/g%3E%3Ccircle cx='320' cy='70' r='26' fill='%23eaf9ff' fill-opacity='.5'/%3E%3Cg fill='%23eaf9ff' fill-opacity='.6'%3E%3Crect x='40' y='40' width='100' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="视频《开一家小书店的第三年：和读者聊聊》封面">
+            <span class="bx-thumb-tag">人物访谈</span>
+            <span class="bx-thumb-dur">13:57</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>开一家小书店的第三年：和读者聊聊</h3>
+            <p>关于选书、亏损、熟客，以及为什么还愿意继续开门。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#ffb74d,#a35b13)">闻</span><span>闻书言</span><span>· 2.6万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 938</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx-card" data-cat="city">
+          <div class="bx-thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23142a38'/%3E%3Cg stroke='%2342e5ff' stroke-opacity='.35' fill='none'%3E%3Cpath d='M0 40 H400 M0 80 H400 M0 120 H400 M0 160 H400'/%3E%3C/g%3E%3Cg fill='%237cf2c3' fill-opacity='.7'%3E%3Crect x='60' y='60' width='90' height='7' rx='3.5'/%3E%3Crect x='200' y='100' width='130' height='7' rx='3.5'/%3E%3C/g%3E%3Ccircle cx='330' cy='180' r='38' fill='%2342e5ff' fill-opacity='.18'/%3E%3C/svg%3E" alt="视频《夜班公交上的城市切片》封面">
+            <span class="bx-thumb-tag">城市探索</span>
+            <span class="bx-thumb-dur">10:19</span>
+          </div>
+          <div class="bx-card-body">
+            <h3>夜班公交上的城市切片</h3>
+            <p>连续七个夜晚，记录同一路公交车上不同时间的乘客。</p>
+            <div class="bx-card-meta"><span class="bx-avatar" style="background:linear-gradient(135deg,#42e5ff,#1b6f8e)">林</span><span>林照野</span><span>· 1.7万</span></div>
+            <div class="bx-card-actions">
+              <button class="bx-act" data-bx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9M3 11h4v9H3zM7 11l4-7a2 2 0 0 1 2 2v3h5a2 2 0 0 1 2 2l-1.5 7H7"/></svg><span>赞 512</span></button>
+              <button class="bx-act" data-bx-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>收藏</span></button>
+              <button class="bx-act" data-bx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="bx-section alt" id="bxTopics">
+    <div class="wrap">
+      <div class="bx-head">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Series</span>
+          <h2 class="bx-h2">专题企划：让分散的影像形成脉络</h2>
+          <p>由编辑团队发起，创作者共同完成。每个专题持续更新，欢迎报名参与。</p>
+        </div>
+        <a class="bx-head-link" href="#bxContact">报名参与企划</a>
+      </div>
+
+      <div class="bx-topics">
+        <article class="bx-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%230d2230'/%3E%3Cg fill='%23133f52'%3E%3Crect x='30' y='300' width='60' height='200'/%3E%3Crect x='110' y='250' width='70' height='250'/%3E%3Crect x='200' y='320' width='56' height='180'/%3E%3Crect x='276' y='270' width='80' height='230'/%3E%3C/g%3E%3Cg fill='%2342e5ff' fill-opacity='.8'%3E%3Crect x='42' y='320' width='8' height='10'/%3E%3Crect x='126' y='270' width='8' height='10'/%3E%3Crect x='290' y='290' width='8' height='10'/%3E%3C/g%3E%3Ccircle cx='320' cy='70' r='34' fill='%237cf2c3' fill-opacity='.5'/%3E%3C/svg%3E" alt="专题《城市夜行》封面：夜色中的楼宇与灯光">
+          <div class="bx-topic-in">
+            <em>更新至 12 集</em>
+            <h3>城市夜行</h3>
+            <p>记录夜间工作者、夜间街道与夜间情绪，已上线 12 支短片。</p>
+          </div>
+        </article>
+        <article class="bx-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%232a2418'/%3E%3Cg fill='%234a3d24'%3E%3Crect x='0' y='330' width='400' height='170'/%3E%3C/g%3E%3Cg stroke='%23ffb74d' stroke-opacity='.7' fill='none' stroke-width='3'%3E%3Ccircle cx='200' cy='200' r='70'/%3E%3Cpath d='M130 200 h140 M200 130 v140'/%3E%3C/g%3E%3Cg fill='%23ffe0a3' fill-opacity='.6'%3E%3Crect x='40' y='60' width='100' height='7' rx='3.5'/%3E%3Crect x='40' y='82' width='60' height='7' rx='3.5'/%3E%3C/g%3E%3C/svg%3E" alt="专题《一间屋子的一天》封面：室内光影与桌椅剪影">
+          <div class="bx-topic-in">
+            <em>持续征集中</em>
+            <h3>一间屋子的一天</h3>
+            <p>把镜头对准最熟悉的空间，讲述居住与时间的关系。</p>
+          </div>
+        </article>
+        <article class="bx-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%231b2433'/%3E%3Cg stroke='%237cd3e8' stroke-opacity='.6' fill='none' stroke-width='2'%3E%3Cpath d='M40 120 H360 M40 200 H360 M40 280 H360'/%3E%3C/g%3E%3Cg fill='%2342e5ff' fill-opacity='.6'%3E%3Crect x='60' y='150' width='120' height='10' rx='5'/%3E%3Crect x='60' y='230' width='80' height='10' rx='5'/%3E%3Crect x='60' y='310' width='160' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%23ffb74d' fill-opacity='.7'%3E%3Ccircle cx='320' cy='400' r='40'/%3E%3C/g%3E%3C/svg%3E" alt="专题《创作者的第一次》封面：剪辑时间轴与进度条">
+          <div class="bx-topic-in">
+            <em>更新至 8 集</em>
+            <h3>创作者的第一次</h3>
+            <p>第一次投稿、第一次被拒、第一次线下放映，真实记录。</p>
+          </div>
+        </article>
+        <article class="bx-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23202a24'/%3E%3Cpath d='M0 380 Q100 300 200 360 T400 320 V500 H0Z' fill='%23395c46'/%3E%3Cg fill='%237cf2c3' fill-opacity='.45'%3E%3Ccircle cx='90' cy='120' r='50'/%3E%3Ccircle cx='300' cy='90' r='34'/%3E%3C/g%3E%3Cg stroke='%23eaf9ff' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Cpath d='M60 420 q40 -30 80 0'/%3E%3C/g%3E%3C/svg%3E" alt="专题《回到土地》封面：田野与远山">
+          <div class="bx-topic-in">
+            <em>已完结 10 集</em>
+            <h3>回到土地</h3>
+            <p>十位返乡者的选择与日常，一部关于土地与人的合辑。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="bx-section" id="bxCreators">
+    <div class="wrap">
+      <div class="bx-head">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Creators</span>
+          <h2 class="bx-h2">创作者矩阵：长期陪伴内容的这些人</h2>
+          <p>91cao 与创作者的关系不是签约即结束，而是共同成长的持续协作。</p>
+        </div>
+        <a class="bx-head-link" href="#bxContact">申请入驻</a>
+      </div>
+
+      <div class="bx-creators">
+        <article class="bx-creator">
+          <div class="bx-creator-av" style="background:linear-gradient(135deg,#42e5ff,#1b6f8e)">林</div>
+          <h3>林照野</h3>
+          <p class="role">城市探索 · 纪实影像</p>
+          <p>擅长在夜间与边缘空间寻找叙事，习惯用环境声代替旁白。</p>
+          <div class="bx-creator-stats"><span><b>86</b>作品</span><span><b>12.4万</b>关注</span></div>
+          <button class="bx-creator-btn" data-bx-author="林照野">查看档案</button>
+        </article>
+        <article class="bx-creator">
+          <div class="bx-creator-av" style="background:linear-gradient(135deg,#ffb74d,#a35b13)">程</div>
+          <h3>程小满</h3>
+          <p class="role">生活方式 · 日常记录</p>
+          <p>拍早餐、拍阳台、拍慢下来的时刻，主张「不加速的生活」。</p>
+          <div class="bx-creator-stats"><span><b>112</b>作品</span><span><b>9.8万</b>关注</span></div>
+          <button class="bx-creator-btn" data-bx-author="程小满">查看档案</button>
+        </article>
+        <article class="bx-creator">
+          <div class="bx-creator-av" style="background:linear-gradient(135deg,#7c5cff,#3a2a8e)">周</div>
+          <h3>周叙白</h3>
+          <p class="role">创作幕后 · 教程干货</p>
+          <p>把制作流程拆开给人看，包括失败方案与成本清单。</p>
+          <div class="bx-creator-stats"><span><b>64</b>作品</span><span><b>15.1万</b>关注</span></div>
+          <button class="bx-creator-btn" data-bx-author="周叙白">查看档案</button>
+        </article>
+        <article class="bx-creator">
+          <div class="bx-creator-av" style="background:linear-gradient(135deg,#2bb6a3,#136b60)">许</div>
+          <h3>许南舟</h3>
+          <p class="role">人物访谈 · 深度对谈</p>
+          <p>访谈节奏克制，善于让被访者在沉默之后说出真话。</p>
+          <div class="bx-creator-stats"><span><b>48</b>作品</span><span><b>7.6万</b>关注</span></div>
+          <button class="bx-creator-btn" data-bx-author="许南舟">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 + 评价 -->
+  <section class="bx-section alt" id="bxWall">
+    <div class="wrap">
+      <div class="bx-head">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Gallery</span>
+          <h2 class="bx-h2">影像墙：来自社区的九帧画面</h2>
+          <p>由用户上传并经 91cao 官方精选，风格、题材与构图各不相同。</p>
+        </div>
+        <a class="bx-head-link" href="#bxContact">上传你的作品</a>
+      </div>
+
+      <div class="bx-wall">
+        <figure class="bx-w-a"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%230e2534'/%3E%3Cg fill='%23163f54'%3E%3Crect x='0' y='240' width='600' height='160'/%3E%3C/g%3E%3Ccircle cx='470' cy='90' r='44' fill='%237cf2c3' fill-opacity='.8'/%3E%3Cpath d='M0 260 Q150 200 300 250 T600 220' stroke='%2342e5ff' stroke-opacity='.6' fill='none' stroke-width='3'/%3E%3Cg fill='%23eaf9ff' fill-opacity='.6'%3E%3Crect x='50' y='60' width='120' height='7' rx='3.5'/%3E%3Crect x='50' y='82' width='80' height='7' rx='3.5'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《海平线上的最后一班船》"><figcaption>海平线上的最后一班船 · 顾晚青</figcaption></figure>
+        <figure class="bx-w-b"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 240'%3E%3Crect width='600' height='240' fill='%232b1f28'/%3E%3Cg fill='%23ffb74d' fill-opacity='.35'%3E%3Ccircle cx='120' cy='70' r='36'/%3E%3C/g%3E%3Cpath d='M0 200 Q150 140 300 190 T600 160 V240 H0Z' fill='%23553b3f'/%3E%3Cg stroke='%23ffe0a3' stroke-opacity='.6' fill='none' stroke-width='2'%3E%3Cpath d='M380 120 q30 -50 60 0'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《窗台的黄昏》"><figcaption>窗台的黄昏 · 夏知遥</figcaption></figure>
+        <figure class="bx-w-c"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%231d2a22'/%3E%3Cg fill='%233c5c46'%3E%3Crect x='20' y='140' width='30' height='80'/%3E%3Crect x='66' y='110' width='30' height='110'/%3E%3Crect x='112' y='150' width='30' height='70'/%3E%3C/g%3E%3Ccircle cx='300' cy='70' r='30' fill='%237cf2c3' fill-opacity='.5'/%3E%3C/svg%3E" alt="影像墙作品《雨后的菜市场》"><figcaption>雨后的菜市场 · 闻书言</figcaption></figure>
+        <figure class="bx-w-d"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 460'%3E%3Crect width='400' height='460' fill='%23151c2b'/%3E%3Cg stroke='%2342e5ff' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Cpath d='M0 120 H400 M0 220 H400 M0 320 H400'/%3E%3C/g%3E%3Cg fill='%237cf2c3' fill-opacity='.65'%3E%3Crect x='50' y='150' width='90' height='9' rx='4.5'/%3E%3Crect x='50' y='250' width='140' height='9' rx='4.5'/%3E%3C/g%3E%3Cg fill='%23ffb74d' fill-opacity='.7'%3E%3Ccircle cx='320' cy='390' r='30'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《凌晨写字楼》"><figcaption>凌晨写字楼 · 沈亦然</figcaption></figure>
+        <figure class="bx-w-e"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%232a2016'/%3E%3Cg fill='%234a3722'%3E%3Crect x='0' y='150' width='400' height='70'/%3E%3C/g%3E%3Cg stroke='%23ffb74d' stroke-opacity='.65' fill='none' stroke-width='3'%3E%3Cpath d='M140 150 v-50 a40 40 0 0 1 80 0 v50'/%3E%3C/g%3E%3Ccircle cx='330' cy='70' r='24' fill='%23ffe0a3' fill-opacity='.6'/%3E%3C/svg%3E" alt="影像墙作品《面包出炉前的十分钟》"><figcaption>面包出炉前的十分钟 · 程小满</figcaption></figure>
+        <figure class="bx-w-c"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%23201b2e'/%3E%3Cg fill='%23c9a0ff' fill-opacity='.28'%3E%3Ccircle cx='90' cy='60' r='46'/%3E%3Ccircle cx='320' cy='150' r='60'/%3E%3C/g%3E%3Cg stroke='%23eaf9ff' stroke-opacity='.55' fill='none' stroke-width='2'%3E%3Cpath d='M160 160 v-40 a40 40 0 0 1 80 0 v40'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《排练厅的下午》"><figcaption>排练厅的下午 · 许南舟</figcaption></figure>
+        <figure class="bx-w-c"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%23122a34'/%3E%3Cpath d='M0 180 L120 110 L240 160 L400 90 V220 H0Z' fill='%231c4a5e'/%3E%3Ccircle cx='320' cy='60' r='22' fill='%237cf2c3' fill-opacity='.7'/%3E%3Cg stroke='%23eaf9ff' stroke-opacity='.5' fill='none' stroke-width='2'%3E%3Cpath d='M40 60 h90'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《山谷里的信号》"><figcaption>山谷里的信号 · 林照野</figcaption></figure>
+      </div>
+
+      <div class="bx-head" style="margin-top:52px">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Voices</span>
+          <h2 class="bx-h2">用户评价：来自社区的真实声音</h2>
+        </div>
+      </div>
+
+      <div class="bx-reviews">
+        <article class="bx-review">
+          <div class="bx-stars">★★★★★</div>
+          <p>在这里第一次看到有人认真拍我老家那条街。看完之后给家里打了电话，这种被理解的感觉很难得。</p>
+          <div class="bx-review-who"><span class="bx-avatar" style="background:linear-gradient(135deg,#42e5ff,#1b6f8e)">阿</span><div><b>阿槐</b><span>社区用户 · 3 年</span></div></div>
+        </article>
+        <article class="bx-review">
+          <div class="bx-stars">★★★★★</div>
+          <p>作为创作者，最直观的感受是编辑会给很具体的反馈，不是一句「再接再厉」，而是第几分钟的什么问题。</p>
+          <div class="bx-review-who"><span class="bx-avatar" style="background:linear-gradient(135deg,#ffb74d,#a35b13)">小</span><div><b>小满不忙</b><span>入驻创作者 · 2 年</span></div></div>
+        </article>
+        <article class="bx-review">
+          <div class="bx-stars">★★★★☆</div>
+          <p>专题策划有想法，能看到不同作者对同一主题的不同处理方式。希望能多一些幕后手记。</p>
+          <div class="bx-review-who"><span class="bx-avatar" style="background:linear-gradient(135deg,#7c5cff,#3a2a8e)">C</span><div><b>Chen_1987</b><span>社区用户 · 1 年</span></div></div>
+        </article>
+        <article class="bx-review">
+          <div class="bx-stars">★★★★★</div>
+          <p>投稿流程比想象中顺，后台能看到审核进度和修改建议。第一次投稿就上线了，挺有成就感。</p>
+          <div class="bx-review-who"><span class="bx-avatar" style="background:linear-gradient(135deg,#2bb6a3,#136b60)">壹</span><div><b>壹帧</b><span>新入驻作者</span></div></div>
+        </article>
+        <article class="bx-review">
+          <div class="bx-stars">★★★★☆</div>
+          <p>比较喜欢这里的播放页没有太多干扰元素，章节标记很实用，适合看长片。</p>
+          <div class="bx-review-who"><span class="bx-avatar" style="background:linear-gradient(135deg,#4aa3e0,#1b5c85)">路</span><div><b>路过人间</b><span>社区用户 · 2 年</span></div></div>
+        </article>
+        <article class="bx-review">
+          <div class="bx-stars">★★★★★</div>
+          <p>线下放映活动组织得很用心，映后交流时间够长，不是走过场。希望明年多一些城市场次。</p>
+          <div class="bx-review-who"><span class="bx-avatar" style="background:linear-gradient(135deg,#c9a0ff,#6a4a9e)">苏</span><div><b>苏木</b><span>社区用户 · 参与 5 场放映</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动态 + FAQ -->
+  <section class="bx-section" id="bxMotion">
+    <div class="wrap">
+      <div class="bx-head">
+        <div class="bx-head-l">
+          <span class="bx-eyebrow">Updates</span>
+          <h2 class="bx-h2">企业动态与帮助中心</h2>
+          <p>91cao 官方发布的运营更新、活动信息与常见问题说明。</p>
+        </div>
+      </div>
+
+      <div class="bx-split">
+        <div>
+          <div class="bx-timeline">
+            <div class="bx-tl-item">
+              <time>2026-11-18 · 官方发布</time>
+              <h4>冬季创作者扶持计划开启报名</h4>
+              <p>面向纪实、生活方式与在地文化方向，提供制作支持与专题推荐位，报名截止 12 月 10 日。</p>
+            </div>
+            <div class="bx-tl-item">
+              <time>2026-11-15 · 内容更新</time>
+              <h4>「城市夜行」专题新增 6 支原创影像</h4>
+              <p>本期新增作品聚焦夜班公交、便利店与凌晨写字楼，专题页已同步上线创作手记。</p>
+            </div>
+            <div class="bx-tl-item">
+              <time>2026-11-10 · 产品更新</time>
+              <h4>移动端剪辑工作台上线</h4>
+              <p>支持粗剪、字幕与封面制作，完成后可直接上传至创作者后台，转码状态实时可见。</p>
+            </div>
+            <div class="bx-tl-item">
+              <time>2026-11-02 · 社区活动</time>
+              <h4>线下放映第八场在城南完成</h4>
+              <p>本次放映共收到 42 份投稿，最终入选 6 支短片，映后交流持续约 90 分钟。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bx-faq">
+          <details open>
+            <summary>如何向 91cao 投稿？需要什么条件？</summary>
+            <p>在联系与投稿入口填写基本信息并附上作品链接即可。作品需为原创或已获得合法授权，画质建议 1080P 及以上，时长不限。审核通常在 5 个工作日内完成，结果会通过站内消息告知。</p>
+          </details>
+          <details>
+            <summary>平台对内容授权有什么要求？</summary>
+            <p>91cao 仅收录正版与已授权内容。若作品使用第三方音乐、字体或影像素材，请在投稿时注明来源与授权方式。涉及人物出镜的内容需获得被拍摄者同意。</p>
+          </details>
+          <details>
+            <summary>创作者扶持计划包含哪些支持？</summary>
+            <p>包括制作补贴、专题推荐位、编辑一对一反馈以及线下放映机会。每期扶持方向不同，具体以当期官方发布为准，报名不收取任何费用。</p>
+          </details>
+          <details>
+            <summary>可以在 91cao 下载作品吗？</summary>
+            <p>是否开放下载由创作者自行决定。作者可在作品中标注授权方式，平台会按标注执行。未标注的作品默认仅限页面内浏览。</p>
+          </details>
+          <details>
+            <summary>如何参与专题企划或社区投票？</summary>
+            <p>专题页会公布当期主题与参与方式，通常通过投稿入口提交。社区投票在专题页面内进行，每个账号每期可投票一次。</p>
+          </details>
+          <details>
+            <summary>遇到内容问题如何反馈？</summary>
+            <p>可通过页面底部的联系入口提交反馈，或使用作品卡片上的反馈按钮。我们承诺在 48 小时内进入处理流程，并在处理完成后回复结果。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 / 投稿 -->
+  <section class="bx-section alt" id="bxContact">
+    <div class="wrap">
+      <div class="bx-contact">
+        <div>
+          <h2>与 91cao 一起，把下一支片子做出来</h2>
+          <p>无论你是第一次拿起相机，还是已经拍了十年，91cao 官网都欢迎你的作品。投稿、合作、活动报名与内容反馈，都可以从这里开始。</p>
+          <div class="bx-contact-actions">
+            <button class="bx-btn bx-btn-primary" data-bx-modal="submit">提交投稿意向</button>
+            <button class="bx-btn bx-btn-ghost" data-bx-modal="share">分享给朋友</button>
+            <button class="bx-btn bx-btn-ghost" data-bx-modal="feedback">反馈与建议</button>
+          </div>
+        </div>
+        <div class="bx-contact-panel">
+          <ul>
+            <li><span>合作邮箱</span><b>brand@91cao.example</b></li>
+            <li><span>投稿咨询</span><b>creator@91cao.example</b></li>
+            <li><span>媒体联络</span><b>press@91cao.example</b></li>
+            <li><span>办公地址</span><b>华东内容中心</b></li>
+            <li><span>响应时间</span><b>48 小时内</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bx-footer">
+  <div class="wrap">
+    <div class="bx-footer-top">
+      <div>
+        <div class="bx-footer-brand">
+          <span class="bx-logo-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 7,20 20,12" fill="#062430"/></svg>
+          </span>
+          <b>91cao</b>
+        </div>
+        <p>91cao 官方网站，专注原创高清影像的内容品牌。持续运营，持续更新，与创作者共同成长。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#bxFocus">焦点影像</a></li>
+          <li><a href="#bxStream">热门影像流</a></li>
+          <li><a href="#bxTopics">专题企划</a></li>
+          <li><a href="#bxWall">影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#bxAbout">品牌故事</a></li>
+          <li><a href="#bxCreators">创作者矩阵</a></li>
+          <li><a href="#bxMotion">企业动态</a></li>
+          <li><a href="#bxContact">联系与投稿</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助</h4>
+        <ul>
+          <li><a href="#bxMotion">常见问题</a></li>
+          <li><a href="#bxContact">合作咨询</a></li>
+          <li><a href="#bxContact">反馈建议</a></li>
+          <li><a href="#bxWall">上传指南</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bx-footer-bottom">
+      <span>© 2026 91cao 版权所有 · 官方网站 · 持续运营中</span>
+      <span>内容均为原创或已获授权 · 品牌备案信息以官方发布为准</span>
+    </div>
+  </div>
+</footer>
+
+<div class="bx-toast" id="bxToast"></div>
+
+<div class="bx-modal" id="bxModal" aria-hidden="true">
+  <div class="bx-modal-box" role="dialog" aria-modal="true" aria-labelledby="bxModalTitle">
+    <h3 id="bxModalTitle">提示</h3>
+    <p class="sub" id="bxModalSub"></p>
+    <div id="bxModalBody"></div>
+    <div class="bx-modal-actions">
+      <button class="bx-btn bx-btn-ghost" data-bx-close>取消</button>
+      <button class="bx-btn bx-btn-primary" id="bxModalOk">确定</button>
+    </div>
+  </div>
+</div>
+
+<button class="bx-to-top" id="bxToTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  var toastEl = document.getElementById('bxToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('bxBurger');
+  var nav = document.getElementById('bxNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('bxSearchInput');
+  var searchHint = document.getElementById('bxSearchHint');
+  var hintTimer = null;
+  searchInput.addEventListener('input', function(){
+    var v = searchInput.value.trim();
+    if(!v){
+      searchHint.classList.remove('show');
+      return;
+    }
+    searchHint.textContent = '正在为「' + v + '」检索 91cao 站内影像、作者与专题…';
+    searchHint.classList.add('show');
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(function(){
+      searchHint.textContent = '与「' + v + '」相关的内容已准备就绪，可按题材与时长进一步筛选。';
+    }, 700);
+  });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' && searchInput.value.trim()){
+      toast('已记录检索词：' + searchInput.value.trim());
+      document.getElementById('bxStream').scrollIntoView({behavior:'smooth'});
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.bx-search')) searchHint.classList.remove('show');
+  });
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-bx-like]');
+    if(likeBtn){
+      var span = likeBtn.querySelector('span');
+      var txt = span.textContent.replace(/[^\d]/g,'');
+      var num = parseInt(txt || '0', 10);
+      if(likeBtn.classList.toggle('on')){
+        num++;
+        span.textContent = '赞 ' + num.toLocaleString('en-US');
+        toast('已点赞，感谢你的认可');
+      } else {
+        num = Math.max(0, num - 1);
+        span.textContent = '赞 ' + num.toLocaleString('en-US');
+        toast('已取消点赞');
+      }
+      return;
+    }
+    var favBtn = e.target.closest('[data-bx-fav]');
+    if(favBtn){
+      var on = favBtn.classList.toggle('on');
+      favBtn.querySelector('span').textContent = on ? '已收藏' : '收藏';
+      var path = favBtn.querySelector('path');
+      if(path) path.setAttribute('fill', on ? 'currentColor' : 'none');
+      toast(on ? '已加入收藏夹' : '已移出收藏夹');
+      return;
+    }
+    var copyBtn = e.target.closest('[data-bx-copy]');
+    if(copyBtn){
+      var link = 'https://www.91cao.example/focus';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ toast('作品链接已复制到剪贴板'); }, function(){ toast('复制失败，请手动选择链接'); });
+      } else {
+        toast('已生成分享链接，可在浏览器地址栏复制');
+      }
+      return;
+    }
+  });
+
+  /* 分类筛选 */
+  var filterBox = document.getElementById('bxFilter');
+  var grid = document.getElementById('bxStreamGrid');
+  filterBox.addEventListener('click', function(e){
+    var chip = e.target.closest('.bx-chip');
+    if(!chip) return;
+    filterBox.querySelectorAll('.bx-chip').forEach(function(c){ c.classList.remove('active'); });
+    chip.classList.add('active');
+    var f = chip.getAttribute('data-filter');
+    grid.querySelectorAll('.bx-card').forEach(function(card){
+      var match = f === 'all' || card.getAttribute('data-cat') === f;
+      card.style.display = match ? '' : 'none';
+    });
+    toast(f === 'all' ? '已显示全部影像' : '已筛选：' + chip.textContent);
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('bxModal');
+  var modalTitle = document.getElementById('bxModalTitle');
+  var modalSub = document.getElementById('bxModalSub');
+  var modalBody = document.getElementById('bxModalBody');
+  var modalOk = document.getElementById('bxModalOk');
+  var lastFocus = null;
+
+  var modalMap = {
+    share: {
+      title: '分享 91cao 官网',
+      sub: '选择你常用的方式，把这份内容清单转给朋友',
+      body: '<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:6px">' +
+            '<button class="bx-btn bx-btn-ghost" data-share="微信">微信</button>' +
+            '<button class="bx-btn bx-btn-ghost" data-share="微博">微博</button>' +
+            '<button class="bx-btn bx-btn-ghost" data-share="QQ">QQ</button>' +
+            '<button class="bx-btn bx-btn-ghost" data-share="复制链接">复制链接</button>' +
+            '</div><p style="font-size:12.5px;color:#7d94a1;margin:10px 0 0">分享内容仅包含页面信息，不涉及个人数据。</p>'
+    },
+    comment: {
+      title: '写下你的评论',
+      sub: '评论会在审核后展示在作品下方',
+      body: '<textarea id="bxCommentText" rows="4" placeholder="说说你对这支片子的看法…"></textarea>'
+    },
+    feedback: {
+      title: '反馈与建议',
+      sub: '我们会认真阅读每一条反馈',
+      body: '<input id="bxFeedbackSubject" type="text" placeholder="反馈主题，例如：播放体验 / 内容问题"><textarea id="bxFeedbackText" rows="3" placeholder="请描述具体情况…"></textarea>'
+    },
+    submit: {
+      title: '提交投稿意向',
+      sub: '填写基本信息，编辑会在 5 个工作日内联系你',
+      body: '<input id="bxSubmitName" type="text" placeholder="你的称呼或创作者名">' +
+            '<input id="bxSubmitLink" type="text" placeholder="作品链接（可选）">' +
+            '<textarea id="bxSubmitText" rows="3" placeholder="简单介绍作品方向与时长…"></textarea>'
+    }
+  };
+
+  function openModal(key){
+    var conf = modalMap[key];
+    if(!conf) return;
+    lastFocus = document.activeElement;
+    modalTitle.textContent = conf.title;
+    modalSub.textContent = conf.sub;
+    modalBody.innerHTML = conf.body;
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden','false');
+    var first = modal.querySelector('textarea, input');
+    if(first) setTimeout(function(){ first.focus(); }, 120);
+  }
+  function closeModal(){
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden','true');
+    if(lastFocus) lastFocus.focus();
+  }
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-bx-modal]');
+    if(trigger){ openModal(trigger.getAttribute('data-bx-modal')); return; }
+    if(e.target === modal || e.target.closest('[data-bx-close]')){ closeModal(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('show')) closeModal();
+  });
+  modal.addEventListener('click', function(e){
+    var shareBtns = e.target.closest('[data-share]');
+    if(shareBtns){
+      var way = shareBtns.getAttribute('data-share');
+      if(way === '复制链接'){
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText('https://www.91cao.example').then(function(){ toast('官网链接已复制'); }, function(){ toast('请手动复制页面链接'); });
+        } else { toast('请手动复制页面链接'); }
+      } else {
+        toast('已生成' + way + '分享内容');
+      }
+      closeModal();
+    }
+  });
+  modalOk.addEventListener('click', function(){
+    var ta = modal.querySelector('textarea');
+    var inputs = modal.querySelectorAll('input');
+    if(ta && !ta.value.trim() && inputs.length === 0){
+      toast('内容不能为空');
+      return;
+    }
+    var nameInput = modal.querySelector('#bxSubmitName, #bxFeedbackSubject');
+    if(nameInput && !nameInput.value.trim()){
+      toast('请先填写必填项');
+      return;
+    }
+    closeModal();
+    toast('已提交，感谢你的参与');
+  });
+
+  /* 作者档案弹窗 */
+  var authorMap = {
+    '林照野': '城市探索方向创作者，作品 86 支，擅长夜间纪实与长镜头调度。入驻 4 年，曾参与「城市夜行」全季拍摄。',
+    '程小满': '生活方式方向创作者，作品 112 支，关注日常细节与慢节奏叙事。主持「一间屋子的一天」专题征集。',
+    '周叙白': '创作幕后与教程方向创作者，作品 64 支，以流程拆解与成本公开著称，是社区里最常被引用的技术作者之一。',
+    '许南舟': '人物访谈方向创作者，作品 48 支，访谈风格克制，擅长在长时间对话中捕捉真实瞬间。'
+  };
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-bx-author]');
+    if(!b) return;
+    var name = b.getAttribute('data-bx-author');
+    modalTitle.textContent = name + ' · 创作者档案';
+    modalSub.textContent = '91cao 官方认证创作者';
+    modalBody.innerHTML = '<p style="font-size:13.5px;color:#4a6272;line-height:1.85">' + (authorMap[name] || '该创作者暂无更多公开信息。') + '</p>';
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden','false');
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('bxToTop');
+  window.addEventListener('scroll', function(){
+    toTop.classList.toggle('show', window.scrollY > 520);
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数字滚动 */
+  var statNums = document.querySelectorAll('.bx-stat b');
+  var done = false;
+  function animateStats(){
+    if(done) return;
+    var rect = document.querySelector('.bx-hero-stats');
+    if(!rect) return;
+    if(rect.getBoundingClientRect().top > window.innerHeight) return;
+    done = true;
+    statNums.forEach(function(el){
+      var raw = el.textContent;
+      var target = parseInt(raw.replace(/[^\d]/g,''), 10);
+      var suffix = raw.replace(/[\d,]/g,'');
+      var start = 0, dur = 1100, t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var val = Math.round(target * (1 - Math.pow(1-p, 3)));
+        el.textContent = val.toLocaleString('en-US') + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  window.addEventListener('scroll', animateStats, {passive:true});
+  animateStats();
+})();
+</script>
+</body>
+              </html>
